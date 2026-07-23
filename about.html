@@ -1,386 +1,355 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>마포 마사지 링크 | 정보 – 마포 마사지 제대로 알고 예약하자</title>
-  <meta name="description" content="마포에서 마사지 고를 때 꼭 알아야 할 정보만 모았습니다. 마포 마사지 링크가 알려주는 마사지 종류, 가격, 팁까지. 오늘 바로 확인하고 예약하세요.">
-  <meta name="keywords" content="마포 마사지, 마포 마사지 링크, 마포 마사지 정보, 마사지 종류, 마사지 가격, 마사지 팁, 마포 스웨디시, 마포 타이 마사지">
-  <meta name="bpaas-design-system" content="brutalist-avantgarde">
-  <meta name="bpaas-design-theme" content="kr-neon-void">
-  <link rel="canonical" href="https://t3b01-mp-massage-link.pages.dev/info">
-  <!-- JSON-LD 스키마 -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "마포 마사지 링크 – 정보",
-    "description": "마포 지역 마사지 정보를 상세히 제공하는 페이지입니다. 마사지 종류, 가격, 이용 팁을 확인하세요.",
-    "url": "https://t3b01-mp-massage-link.pages.dev/info",
-    "inLanguage": "ko",
-    "about": {
-      "@type": "Thing",
-      "name": "마포 마사지 정보"
-    }
-  }
-  </script>
-  <!-- OG / Twitter Card -->
-  <meta property="og:title" content="마포 마사지 링크 | 정보">
-  <meta property="og:description" content="마포에서 마사지 고를 때 꼭 알아야 할 정보만 모았습니다. 종류, 가격, 팁까지 한 번에 확인하세요.">
-  <meta property="og:url" content="https://t3b01-mp-massage-link.pages.dev/info">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="ko_KR">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="마포 마사지 링크 | 정보">
-  <meta name="twitter:description" content="마포 마사지 정보 총정리. 어떤 마사지가 좋을지 고민된다면 여기 다 있어요.">
-  <style>
-    /* === RESET & BASE === */
-    *, *::before, *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html {
-      font-size: 16px;
-      scroll-behavior: smooth;
-      background: #0a0a0f;
-    }
-    body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      background: #0a0a0f;
-      color: #e0e0e0;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-    a {
-      color: #ff4d4d;
-      text-decoration: underline wavy #ff4d4d 2px;
-      transition: color 0.2s;
-    }
-    a:hover {
-      color: #ff8080;
-    }
-    img {
-      max-width: 100%;
-      display: block;
-    }
-    ul {
-      list-style: none;
-    }
-
-    /* === LAYOUT — FULL BLEED, ASYMMETRIC === */
-    .air {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem;
-    }
-    @media (max-width: 768px) {
-      .air {
-        padding: 1.2rem 1rem;
-      }
-    }
-
-    /* === TYPOGRAPHY — OVERSIZED, BOLD === */
-    h1 {
-      font-size: 4rem;
-      font-weight: 900;
-      letter-spacing: -0.03em;
-      line-height: 1;
-      color: #ff4d4d;
-      text-transform: uppercase;
-      margin-bottom: 1.2rem;
-      text-shadow: 0 4px 0 #1a1a2e, 0 8px 20px rgba(255,77,77,0.3);
-      word-break: break-word;
-    }
-    h2 {
-      font-size: 2.6rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      color: #f0f0f0;
-      border-left: 12px solid #ff4d4d;
-      padding-left: 1rem;
-      margin: 2.5rem 0 1.5rem;
-      text-transform: uppercase;
-    }
-    h3 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #ff8080;
-      margin-bottom: 0.8rem;
-      position: relative;
-      display: inline-block;
-    }
-    h3::after {
-      content: '';
-      display: block;
-      width: 60%;
-      height: 4px;
-      background: #ff4d4d;
-      margin-top: 0.3rem;
-    }
-    p {
-      margin-bottom: 1.5rem;
-      font-size: 1.1rem;
-      max-width: 75ch;
-    }
-    @media (max-width: 768px) {
-      h1 { font-size: 2.8rem; }
-      h2 { font-size: 2rem; }
-      h3 { font-size: 1.4rem; }
-      p { font-size: 1rem; }
-    }
-
-    /* === NAV === */
-    nav {
-      background: #111118;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 4px solid #ff4d4d;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav .logo a {
-      font-size: 1.5rem;
-      font-weight: 900;
-      color: #ff4d4d;
-      text-decoration: none;
-      text-transform: uppercase;
-      border: 3px solid #ff4d4d;
-      padding: 0.3rem 0.8rem;
-      transition: background 0.2s;
-    }
-    nav .logo a:hover {
-      background: #ff4d4d;
-      color: #0a0a0f;
-    }
-    nav ul {
-      display: flex;
-      gap: 2rem;
-      align-items: center;
-    }
-    nav ul li a {
-      font-size: 1rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: #e0e0e0;
-      text-decoration: none;
-      letter-spacing: 0.05em;
-      padding: 0.3rem 0.5rem;
-      border: 2px solid transparent;
-      transition: border-color 0.2s;
-    }
-    nav ul li a:hover {
-      border-color: #ff4d4d;
-      color: #ff4d4d;
-    }
-    nav .hamburger {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-      gap: 5px;
-      background: transparent;
-      border: none;
-      padding: 0.5rem;
-    }
-    nav .hamburger span {
-      width: 28px;
-      height: 3px;
-      background: #e0e0e0;
-      display: block;
-      transition: all 0.3s;
-    }
-    /* responsive */ 
-    @media (max-width: 768px) {
-      nav .hamburger {
-        display: flex;
-      }
-      nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: #111118;
-        border-bottom: 4px solid #ff4d4d;
-        padding: 1rem 0;
-        gap: 0.5rem;
-      }
-      nav ul.active {
-        display: flex;
-      }
-      nav ul li {
-        text-align: center;
-      }
-      nav ul li a {
-        display: block;
-        padding: 0.8rem 0;
-      }
-    }
-
-    /* === CARD STYLES === */
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin: 2.5rem 0;
-    }
-    .card {
-      background: #15151f;
-      border: 3px solid #2a2a3a;
-      padding: 1.8rem;
-      transition: border-color 0.3s, transform 0.2s;
-    }
-    .card:hover {
-      border-color: #ff4d4d;
-      transform: translateY(-5px);
-    }
-    .card h3 {
-      margin-top: 0;
-      display: block;
-    }
-    .card h3::after {
-      width: 40%;
-    }
-    .card p {
-      font-size: 0.95rem;
-      margin-bottom: 0.8rem;
-    }
-
-    /* === FAQ === */
-    .faq-item {
-      border-bottom: 2px dashed #2a2a3a;
-      padding: 1.5rem 0;
-    }
-    .faq-item:last-child {
-      border-bottom: none;
-    }
-    .faq-question {
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: #ff8080;
-      cursor: pointer;
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .faq-question::after {
-      content: '+';
-      font-size: 1.6rem;
-      color: #ff4d4d;
-      transition: transform 0.3s;
-    }
-    .faq-question.open::after {
-      content: '−';
-      transform: rotate(180deg);
-    }
-    .faq-answer {
-      margin-top: 1rem;
-      padding-left: 1.2rem;
-      border-left: 4px solid #ff4d4d;
-      display: none;
-      font-size: 1rem;
-    }
-    .faq-answer.show {
-      display: block;
-    }
-
-    /* === TEL LINK === */
-    .tel-link {
-      display: inline-block;
-      background: #ff4d4d;
-      color: #0a0a0f;
-      font-weight: 900;
-      font-size: 1.4rem;
-      padding: 0.8rem 2rem;
-      text-decoration: none;
-      border: 4px solid #ff4d4d;
-      transition: background 0.2s, color 0.2s;
-      margin: 1rem 0;
-    }
-    .tel-link:hover {
-      background: transparent;
-      color: #ff4d4d;
-    }
-
-    /* === FOOTER === */
-    footer {
-      background: #111118;
-      border-top: 4px solid #ff4d4d;
-      padding: 2rem 1.5rem;
-      text-align: center;
-      margin-top: 3rem;
-    }
-    footer p {
-      margin: 0.3rem 0;
-      font-size: 0.9rem;
-      color: #888;
-    }
-    footer a {
-      color: #ff8080;
-    }
-  </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-ivory-ink">
+    <title>합정 노래방 위치 정보 — 지역 데이터 기반 선택 가이드</title>
+    <meta name="description" content="합정 지역 노래방의 정확한 위치와 주변 환경 데이터를 분석합니다. 교통 접근성, 인근 상권, 건물 특징 등 구체적인 위치 요소를 비교하여 목적에 맞는 공간을 선정할 수 있도록 안내합니다.">
+    <meta name="keywords" content="합정 노래방 위치, 합정역 노래방, 합정동 노래방, 합정 룸카레오케 위치, 합정 코인노래방 접근성, 합정 프라이빗 노래방 환경, 홍대입구역 노래방, 서울 서남부 노래방 정보">
+    <link rel="canonical" href="https://hapjeong-info-note.gangnam-night-zone.xyz/location-info">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="합정 노래방 위치 데이터 — 위치별 특성과 접근성 분석">
+    <meta property="og:description" content="합정 지역 노래방의 지리적 특성과 교통 접근성을 데이터로 분석합니다. 건물 규모, 주변 시설 연계성, 보행 동선 등 실질적 선택 요소를 제시합니다.">
+    <meta property="og:image" content="https://hapjeong-info-note.gangnam-night-zone.xyz/og-location-info.jpg">
+    <meta property="og:url" content="https://hapjeong-info-note.gangnam-night-zone.xyz/location-info">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="합정 노래방 정보 노트">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="합정 노래방 위치 정보 — 데이터 기반 선택 가이드">
+    <meta name="twitter:description" content="합정 지역 노래방의 위치별 특성과 접근성 데이터를 종합 분석합니다.">
+    <meta name="robots" content="index, follow">
+    <style>
+        :root {
+            --c-bg: #f8f6f0;
+            --c-text: #2d2d2d;
+            --c-accent: #8b4513;
+            --c-border: #d1cec5;
+            --c-surface: #ffffff;
+            --f-serif: "Noto Serif KR", "Georgia", serif;
+            --f-sans: "Noto Sans KR", "Helvetica Neue", sans-serif;
+            --s-page: 80px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: var(--f-sans);
+            background-color: var(--c-bg);
+            color: var(--c-text);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+        .x-btn-m89j {
+            position: fixed;
+            top: 24px;
+            right: 24px;
+            z-index: 1000;
+            background: var(--c-surface);
+            border: 1px solid var(--c-border);
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .x-img-kpvj {
+            width: 24px;
+            height: 24px;
+            opacity: 0.7;
+        }
+        .m-side-oqkz {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 320px;
+            height: 100vh;
+            background: var(--c-surface);
+            border-left: 1px solid var(--c-border);
+            padding: 100px 40px 40px;
+            transition: right 0.3s ease;
+            z-index: 999;
+            overflow-y: auto;
+        }
+        .m-side-oqkz.is-open { right: 0; }
+        .q-nav-a5eg-links { list-style: none; }
+        .q-nav-a5eg-links a {
+            display: block;
+            padding: 12px 0;
+            color: var(--c-text);
+            text-decoration: none;
+            border-bottom: 1px solid var(--c-border);
+            font-size: 0.95rem;
+        }
+        .q-nav-a5eg-links a:hover { color: var(--c-accent); }
+        .v-hero-4hhp {
+            min-height: 60vh;
+            display: flex;
+            align-items: flex-end;
+            padding: 0 var(--s-page);
+            background-color: var(--c-surface);
+            border-bottom: 1px solid var(--c-border);
+        }
+        .v-hero-4hhp-content {
+            max-width: 800px;
+            padding: 80px 0 60px;
+        }
+        .v-hero-4hhp h1 {
+            font-family: var(--f-serif);
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            line-height: 1.3;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        .v-hero-4hhp h1::first-letter {
+            font-size: 1.2em;
+            color: var(--c-accent);
+        }
+        .v-hero-4hhp p {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 600px;
+        }
+        .s-content-9kqz {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px var(--s-page);
+        }
+        .t-section-r8s2 {
+            margin-bottom: 80px;
+        }
+        .t-section-r8s2 h2 {
+            font-family: var(--f-serif);
+            font-size: 1.6rem;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--c-accent);
+        }
+        .t-section-r8s2 p {
+            margin-bottom: 16px;
+            font-size: 1rem;
+            line-height: 1.9;
+        }
+        .g-card-grid-x4f7 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+        .c-data-card-9v2q {
+            background: var(--c-surface);
+            border: 1px solid var(--c-border);
+            padding: 24px;
+        }
+        .c-data-card-9v2q h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--c-accent);
+        }
+        .c-data-card-9v2q p {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0;
+        }
+        .m-table-compare-p8g4 {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 24px;
+        }
+        .m-table-compare-p8g4 th, .m-table-compare-p8g4 td {
+            padding: 14px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--c-border);
+        }
+        .m-table-compare-p8g4 th {
+            background: #f1efe9;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .m-table-compare-p8g4 td {
+            font-size: 0.95rem;
+        }
+        .b-faq-toggle-xz5y {
+            border: 1px solid var(--c-border);
+            margin-bottom: 12px;
+            background: var(--c-surface);
+        }
+        .b-faq-toggle-xz5y button {
+            width: 100%;
+            padding: 16px 20px;
+            background: none;
+            border: none;
+            text-align: left;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .b-faq-toggle-xz5y button::after {
+            content: '+';
+            font-size: 1.4rem;
+            color: var(--c-accent);
+        }
+        .b-faq-toggle-xz5y button.is-active::after { content: '-'; }
+        .b-faq-toggle-xz5y .a-faq-content-h7v3 {
+            padding: 0 20px 20px;
+            font-size: 0.95rem;
+            color: #555;
+            display: none;
+        }
+        .b-faq-toggle-xz5y button.is-active + .a-faq-content-h7v3 { display: block; }
+        .f-footer-q9s1 {
+            margin-top: 80px;
+            padding: 40px var(--s-page);
+            border-top: 1px solid var(--c-border);
+            background: #f1efe9;
+            font-size: 0.85rem;
+            color: #777;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <!-- 네비게이션 (전체 페이지 공통) -->
-  <nav>
-    <div class="logo">
-      <a href="/" title="마포 마사지 링크 홈">마마링</a>
-    </div>
-    <button class="hamburger" aria-label="메뉴 열기" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
+    <button class="x-btn-m89j" aria-label="메뉴 열기">
+        <img src="icon-menu.svg" alt="" class="x-img-kpvj">
     </button>
-    <ul id="nav-menu">
-      <li><a href="/">홈</a></li>
-      <li><a href="/info" style="color:#ff4d4d; border-color:#ff4d4d;">정보</a></li>
-      <li><a href="/review">후기</a></li>
-      <li><a href="/price">가격</a></li>
-      <li><a href="/contact">문의</a></li>
-    </ul>
-  </nav>
+    <aside class="m-side-oqkz">
+        <nav>
+            <ul class="q-nav-a5eg-links">
+                <li><a href="index.html">정보 노트</a></li>
+                <li><a href="location-info.html">위치 정보</a></li>
+                <li><a href="selection-guide.html">선정 기준</a></li>
+                <li><a href="district-signal.html">지역 시그널</a></li>
+                <li><a href="contact.html">문의</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-  <!-- 메인 콘텐츠 -->
-  <main class="air">
-    <h1>정보 · 마포 마사지 링크</h1>
-    <p style="font-size:1.3rem; font-weight:600; color:#ff8080;">
-      마사지 처음이세요? 자주 가는 분들도 헷갈리는 마사지 종류와 꿀팁, 여기 다 정리했어요.
-    </p>
+    <header class="v-hero-4hhp">
+        <div class="v-hero-4hhp-content">
+            <h1>합정 노래방<br>위치 데이터 분석</h1>
+            <p>합정 지역 노래방의 정확한 좌표와 주변 환경 데이터를 정리합니다. 교통 접근성, 인근 상권 특성, 건물 위치 등을 종합 분석하여 실질적인 선택 기준을 제시합니다.</p>
+        </div>
+    </header>
 
-    <!-- 섹션 1: 마사지 종류 소개 -->
-    <h2>🖐️ 마사지 종류, 뭐가 달라?</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>스웨디시 마사지</h3>
-        <p>가장 기본적이면서도 인기 많은 코스. 오일을 사용해 전신을 부드럽게 풀어줘요. 근육통 완화와 혈액순환 개선에 짱. 마포에서 '스웨디시 원해요' 하면 대부분 이걸 말하는 거예요.</p>
-      </div>
-      <div class="card">
-        <h3>타이 마사지</h3>
-        <p>옷 입고 하는 마사지! 스트레칭과 압박을 결합한 스타일. 유연성 up, 피로 회복에 좋아요. 좀 아플 수도 있는데 '시원하게 아프다'는 느낌. 처음엔 살짝 놀랄 수 있어요.</p>
-      </div>
-      <div class="card">
-        <h3>아로마 마사지</h3>
-        <p>향기 오일로 하는 마사지. 스트레스 해소에 최고예요. 마음까지 편안해지는 느낌. 마사지 초보자도 부담 없이 받을 수 있어 추천합니다.</p>
-      </div>
-      <div class="card">
-        <h3>건식 마사지 (건마)</h3>
-        <p>오일 없이 옷 위로 지압 위주로 하는 스타일. 시원하고 깔끔하게 풀고 싶을 때 딱. 등, 어깨, 목에 집중할 수 있어요.</p>
-      </div>
-    </div>
+    <main class="s-content-9kqz">
+        <section class="t-section-r8s2">
+            <h2>지역별 위치 분포 및 특성</h2>
+            <p>합정동 일대의 노래방은 크게 세 가지 주요 구역에 분포합니다. 각 구역은 고유한 접근성 특성과 주변 상권 연계성을 가지며, 이는 이용 목적에 따라 선정 기준이 달라질 수 있음을 의미합니다.</p>
+            
+            <div class="g-card-grid-x4f7">
+                <div class="c-data-card-9v2q">
+                    <h3>합정역 1번 출구 인근</h3>
+                    <p>대중교통 접근성이 가장 우수한 구역. 지상 1~2층 매장이 밀집하며, 주변 식당 및 카페와의 연계성이 강합니다. 유동 인구가 많아 예약 필수.</p>
+                </div>
+                <div class="c-data-card-9v2q">
+                    <h3>양화로沿線 대로변</h3>
+                    <p>건물 규모가 상대적으로 크고, 주차 시설 완비 매장이 집중. 자가용 이용 고객에게 적합하며, 넓은 로비와 고급 인테리어 매장이 분포합니다.</p>
+                </div>
+                <div class="c-data-card-9v2q">
+                    <h3>합정동 골목 상권</h3>
+                    <p>소규모 프라이빗 공간이 주를 이루며, 비교적 조용한 환경. 주변 거주지역과 인접하여 정적인 분위기를 선호하는 이용객에게 적합합니다.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- 섹션 2: 지역 시그널 – 마포 이야기 -->
-    <h2>📍 마포에서 마사지, 이렇게 골라요</h2>
-    <p>
-      마포는 홍대, 합정, 상수, 망원 등 동네마다 분위기가 확 달라요. 가까운 곳에서 마사지 샵을 찾고 계신다면 위치가 진짜 중요해요. 저도 처음에 마포 와서 '여긴 샵이 많네?' 하고 놀랐는데, 동네마다 스타일이 조금씩 달라요. 예를 들어 홍대 쪽은 젊은 감각의 스웨디시가 많고, 망원 쪽은 가성비 좋은 타이 마사지가 강세예요.
-    </p>
-    <p>
-      마포 마사지 링크에서는 이런 지역 특성을 반영한 정보를 계속 업데이트하고 있어요. 직접 가본 곳, 주변 지인들이 추천한 곳을 중심으로 정리했으니 믿고 보시면 됩니다.
-    </p>
+        <section class="t-section-r8s2">
+            <h2>교통 접근성 데이터 비교</h2>
+            <p>각 구역별 도보 접근 시간과 교통 수단별 접근 용이성을 정량적으로 비교합니다.</p>
+            
+            <table class="m-table-compare-p8g4">
+                <thead>
+                    <tr>
+                        <th>위치 구역</th>
+                        <th>지하철 도보 시간</th>
+                        <th>버스 정류장 접근</th>
+                        <th>주차 가능 여부</th>
+                        <th>보행 환경</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>합정역 1번 출구</td>
+                        <td>3분 이내</td>
+                        <td>즉시 접근</td>
+                        <td>제한적 (유료)</td>
+                        <td>인도 넓음, 조명 밝음</td>
+                    </tr>
+                    <tr>
+                        <td>양화로沿線</td>
+                        <td>5~7분</td>
+                        <td>1~2분</td>
+                        <td>건물 내 주차장 다수</td>
+                        <td>대로변, 차량 통행량 많음</td>
+                    </tr>
+                    <tr>
+                        <td>합정동 골목</td>
+                        <td>8~10분</td>
+                        <td>4~5분</td>
+                        <td>가능 (건물별 상이)</td>
+                        <td>좁은 골목, 야간 조명 보통</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <!--
+        <section class="t-section-r8s2">
+            <h2>위치 기반 선택 고려사항</h2>
+            <p>단순한 거리 이외에, 실제 이용 시 고려해야 할 위치 관련 요소들을 정리합니다.</p>
+            <p><strong>1. 건물 입구 접근성:</strong> 지상 1층 로비가 있는 매장과 별도 출입구를 사용하는 건물은 이용 편의성에 차이가 있습니다. 특히 늦은 시간 이용 시 출입문 관리 방식을 확인하는 것이 좋습니다.</p>
+            <p><strong>2. 주변 소음 환경:</strong> 대로변 매장은 차량 소음이, 골목 내 매장은 이웃 상점 소음이 영향을 줄 수 있습니다. 건물의 방음 시설 등급은 공식 데이터로 확인이 어렵지만, 리뷰에서 언급되는 빈도가 높은 요소입니다.</p>
+            <p><strong>3. 식음료 연계성:</strong> 노래방 인근에 식당이나 편의점이 밀집해 있으면 예약 전후 식사安排가 수월해집니다. 합정역 주변은 이점이 뚜렷하며, 골목 상권은 개별 매장 내 식음료 서비스 수준에 의존합니다.</p>
+        </section>
+
+        <section class="t-section-r8s2">
+            <h2>자주 묻는 질문</h2>
+            
+            <div class="b-faq-toggle-xz5y">
+                <button>합정역에서 가장 가까운 노래방은 어디인가요?</button>
+                <div class="a-faq-content-h7v3">
+                    합정역 1번 출구에서 도보 3분 이내 거리에 다수의 매장이 위치합니다. 단, 높은 접근성으로 인해 주말 저녁 시간대에는 대기 시간이 발생할 수 있으므로 사전 예약을 권장합니다.
+                </div>
+            </div>
+            
+            <div class="b-faq-toggle-xz5y">
+                <button>주차하기 좋은 노래방 위치가 있나요?</button>
+                <div class="a-faq-content-h7v3">
+                    양화로沿線 대로변에 위치한 매장들은 대부분 건물 내 주차장을 갖추고 있어 자가용 이용 시 편리합니다. 합정역 인근과 골목 상권은 주차 공간이 제한적이며, 인근 유료 주차장을 이용해야 할 수 있습니다.
+                </div>
+            </div>
+            
+            <div class="b-faq-toggle-xz5y">
+                <button>深夜 이용 시 접근성에 차이가 있나요?</button>
+                <div class="a-faq-content-h7v3">
+                    합정역 인근 매장은 지하철 운영 시간 내 접근이 용이하며, 양화로沿線 매장은 도로 조명이 밝아 야간 이동이 수월합니다. 골목 상권은 상대적으로 어두울 수 있으니 도보 이동 시 주의가 필요합니다.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="f-footer-q9s1">
+        <p>본 정보는 합정 지역 노래방의 공개된 위치 데이터와 환경 특성을 분석하여 작성되었습니다. 실제 이용 전 반드시 해당 매장에 확인하시기 바랍니다.</p>
+        <p>© 2024 합정 노래방 정보 노트</p>
+    </footer>
+
+    <script>
+        document.querySelector('.x-btn-m89j').addEventListener('click', function() {
+            document.querySelector('.m-side-oqkz').classList.toggle('is-open');
+            this.classList.toggle('is-active');
+        });
+
+        document.querySelectorAll('.b-faq-toggle-xz5y button').forEach(function(button) {
+            button.addEventListener('click', function() {
+                this.classList.toggle('is-active');
+            });
+        });
+    </script>
 </body>
 </html>
